@@ -1,23 +1,19 @@
 import "./App.scss";
-import Button from "@mui/material/Button";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
-const follows = [
-  {
-    icon: <LinkedInIcon sx={{ fontSize: "32px" }} />,
-    link: "https://www.linkedin.com/in/yuweihu/",
-  },
-  {
-    icon: <InstagramIcon sx={{ fontSize: "32px" }} />,
-    link: "https://www.instagram.com/ayowi/",
-  },
-  {
-    icon: <GitHubIcon sx={{ fontSize: "32px" }} />,
-    link: "https://github.com/YuweiHu",
-  },
-];
+// const follows = [
+//   {
+//     icon: <LinkedInIcon sx={{ fontSize: "32px" }} />,
+//     link: "https://www.linkedin.com/in/yuweihu/",
+//   },
+//   {
+//     icon: <InstagramIcon sx={{ fontSize: "32px" }} />,
+//     link: "https://www.instagram.com/ayowi/",
+//   },
+//   {
+//     icon: <GitHubIcon sx={{ fontSize: "32px" }} />,
+//     link: "https://github.com/YuweiHu",
+//   },
+// ];
 
 function App() {
   return (
