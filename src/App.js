@@ -181,7 +181,7 @@ function App() {
             </a>
             <h2>Contact me.</h2>
             <p class="lead">
-              More links: <a href="https://dribbble.com/hellovolker">GitHub</a>,
+              More links: <a href="https://github.com/YuweiHu">GitHub</a>,
               <a href="https://www.linkedin.com/in/ottovolker"> LinkedIn</a>.
             </p>
           </div>
