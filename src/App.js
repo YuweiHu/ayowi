@@ -1,19 +1,5 @@
 import "./App.scss";
-
-// const follows = [
-//   {
-//     icon: <LinkedInIcon sx={{ fontSize: "32px" }} />,
-//     link: "https://www.linkedin.com/in/yuweihu/",
-//   },
-//   {
-//     icon: <InstagramIcon sx={{ fontSize: "32px" }} />,
-//     link: "https://www.instagram.com/ayowi/",
-//   },
-//   {
-//     icon: <GitHubIcon sx={{ fontSize: "32px" }} />,
-//     link: "https://github.com/YuweiHu",
-//   },
-// ];
+import $ from "jquery";
 
 function App() {
   return (
@@ -28,19 +14,64 @@ function App() {
             </a>
             <h2>Cliff Hu.</h2>
             <ul class="anchornav">
-              <li>
+              <li
+                onClick={() => {
+                  $("html, body").animate(
+                    {
+                      scrollTop: $("#intro").offset().top,
+                    },
+                    1000
+                  );
+                }}
+              >
                 <a href="#intro">Intro</a>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  $("html, body").animate(
+                    {
+                      scrollTop: $("#about").offset().top,
+                    },
+                    1200
+                  );
+                }}
+              >
                 <a href="#about">About</a>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  $("html, body").animate(
+                    {
+                      scrollTop: $("#blog").offset().top,
+                    },
+                    1400
+                  );
+                }}
+              >
                 <a href="#blog">Blog</a>
               </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
+              <li
+                onClick={() => {
+                  $("html, body").animate(
+                    {
+                      scrollTop: $("#portfolio").offset().top,
+                    },
+                    1600
+                  );
+                }}
+              >
+                <a href="#portfolio">Portfolio & Work</a>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  $("html, body").animate(
+                    {
+                      scrollTop: $("#contact").offset().top,
+                    },
+                    1800
+                  );
+                }}
+              >
                 <a href="#contact">Contact</a>
               </li>
             </ul>
@@ -54,9 +85,11 @@ function App() {
             <a class="pre" href="#intro">
               <span>#1</span>Intro
             </a>
-            <h1>I am a Full-Stack Engineer based in Taiwan.</h1>
+            <h1>
+              Full-Stack Engineer <span>based in</span> Taiwan.
+            </h1>
             <p class="lead">
-              See my full resume on{" "}
+              <span>See my full resume on </span>
               <a
                 href="https://www.linkedin.com/in/yuweihu/"
                 target="_blank"
@@ -72,43 +105,42 @@ function App() {
       </section>
 
       <section class="section section--about" id="about">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 10"
-          preserveAspectRatio="none"
-        >
-          <polygon points="100 0 100 10 0 10" />
-        </svg>
-
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#about">
               <span>#2</span>About
             </a>
-            <h2>I'm familiar with React ecosystem.</h2>
-            <p class="lead">Tech Stack</p>
-            <p class="lead">Font-End: React / Redux / NuxtJS / tailwindcss</p>
-            <p class="lead">Back-End: node.js / Express / MongoDB</p>
+            <h2>
+              <span>familiar with</span> ReactJS ecosystem
+            </h2>
+            <h2>
+              <span> includes </span>React<span> / </span>Redux<span> / </span>
+              React Router<span> / </span> Relay
+            </h2>
+            <h2>
+              <span> also have some experience on </span> Nuxt<span> / </span>
+              TailwindCSS
+            </h2>
+            <h2>
+              <span> about back-end... </span> NodeJS <span> with </span>{" "}
+              Express
+            </h2>
+            <h2>
+              <span> about database... </span> MongoDB
+            </h2>
           </div>
         </div>
       </section>
 
       <section class="section section--clients" id="blog">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 10"
-          preserveAspectRatio="none"
-        >
-          <polygon points="100 10 0 0 0 10" />
-        </svg>
-
         <div class="section__inner">
-          {/* <div style={{ border: "1ps solid red" }}> */}
           <a class="pre" href="#clients">
             <span>#3</span>Blog
           </a>
           <h2>
-            I wrote my study notes and some technology articles in my blog.
+            <span>I wrote my</span> study notes <span>and some</span> technology
+            articles
+            <span> in my </span>blog.
           </h2>
           <p class="lead">
             <a
@@ -120,31 +152,49 @@ function App() {
               Take a look.
             </a>
           </p>
-          {/* </div> */}
         </div>
       </section>
 
       <section class="section section--portfolio1" id="portfolio">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-        </svg>
-
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#portfolio">
-              <span>#4</span>Portfolio
+              <span>#4</span>Portfolio & Work
             </a>
+            <h2>Portfolio</h2>
             <h2>
-              Portfolio -
-              <br />
-              Beats Maker.
+              <a
+                href="https://ayowi.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Personal Homepage
+              </a>
+              <span> / </span>
+              <a
+                href="https://ayowi-blog.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Personal Blog
+              </a>
+              <span> / </span>
+              <a
+                href="https://github.com/YuweiHu/beats-maker"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Beats Maker
+              </a>
+              <span> / </span>
+              <a
+                href="https://github.com/YuweiHu/recipe-app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Recipe Search Engine
+              </a>
             </h2>
-            <p class="lead">A simple beats maker app.</p>
-            {/* <Button style={{ alignSelf: "end" }}>GO DEMO</Button> */}
           </div>
         </div>
       </section>
@@ -152,25 +202,18 @@ function App() {
       <section class="section section--portfolio" id="portfolio2">
         <div class="section__inner">
           <div class="block">
+            <h2>Work</h2>
             <h2>
-              Portfolio -
-              <br />
-              Recipe Search Engine.
+              <a
+                href="https://www.decopapa.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Decopapa Offical Website
+              </a>
             </h2>
-            <p></p>
           </div>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="100%"
-          height="100"
-          viewBox="0 0 100 102"
-          preserveAspectRatio="none"
-          class="bottom"
-        >
-          <path d="M0 0 L50 100 L100 0 Z"></path>
-        </svg>
       </section>
 
       <section class="section section--contact" id="contact">
@@ -181,7 +224,9 @@ function App() {
             </a>
             <h2>Contact me.</h2>
             <p class="lead">
-              More links: <a href="https://github.com/YuweiHu">GitHub</a>,
+              <span>More links:</span>{" "}
+              <a href="mailto:j821220j821220@gmail.com">Email</a>,
+              <a href="https://github.com/YuweiHu"> GitHub</a>,
               <a href="https://www.linkedin.com/in/ottovolker"> LinkedIn</a>.
             </p>
           </div>
