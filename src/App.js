@@ -225,9 +225,20 @@ function App() {
             <h2>Contact me.</h2>
             <p class="lead">
               <span>More links:</span>{" "}
-              <a href="mailto:j821220j821220@gmail.com">Email</a>,
-              <a href="https://github.com/YuweiHu"> GitHub</a>,
-              <a href="https://www.linkedin.com/in/ottovolker"> LinkedIn</a>.
+              <a href="mailto:j821220j821220@gmail.com" target="_blank">
+                Email
+              </a>
+              ,
+              <a href="https://github.com/YuweiHu" target="_blank">
+                {" "}
+                GitHub
+              </a>
+              ,
+              <a href="https://www.linkedin.com/in/ottovolker" target="_blank">
+                {" "}
+                LinkedIn
+              </a>
+              .
             </p>
           </div>
         </div>
