@@ -86,7 +86,7 @@ function App() {
               <span>#1</span>Intro
             </a>
             <h1>
-              Full-Stack Engineer <span>based in</span> Taiwan.
+              Full-Stack Engineer <span>based in</span> Taiwan
             </h1>
             <p class="lead">
               <span>See my full resume on </span>
@@ -111,14 +111,17 @@ function App() {
               <span>#2</span>About
             </a>
             <h2>
-              <span>familiar with</span> ReactJS ecosystem
+              <span>familiar with</span> ReactJS <span>ecosystem</span>
             </h2>
             <h2>
-              <span> includes </span>React<span> / </span>Redux<span> / </span>
-              React Router<span> / </span> Relay
+              <span> includes </span> React <span> / </span>Redux
+              <span> / </span>
+              React Router<span> ...etc </span>
             </h2>
             <h2>
-              <span> also have some experience on </span> Nuxt<span> / </span>
+              <span>also have experience with... </span> TypeScript{" "}
+              <span> / </span> Nuxt
+              <span> / </span>
               TailwindCSS
             </h2>
             <h2>
@@ -140,7 +143,7 @@ function App() {
           <h2>
             <span>I wrote my</span> study notes <span>and some</span> technology
             articles
-            <span> in my </span>blog.
+            <span> in my blog.</span>
           </h2>
           <p class="lead">
             <a
