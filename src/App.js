@@ -228,16 +228,28 @@ function App() {
             <h2>Contact me.</h2>
             <p class="lead">
               <span>More links:</span>{" "}
-              <a href="mailto:j821220j821220@gmail.com" target="_blank">
+              <a
+                href="mailto:j821220j821220@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Email
               </a>
               ,
-              <a href="https://github.com/YuweiHu" target="_blank">
+              <a
+                href="https://github.com/YuweiHu"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 GitHub
               </a>
               ,
-              <a href="https://www.linkedin.com/in/ottovolker" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/ottovolker"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 LinkedIn
               </a>
