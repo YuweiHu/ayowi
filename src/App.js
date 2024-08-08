@@ -202,7 +202,7 @@ function App() {
         </div>
       </section>
 
-      <section class="section section--portfolio" id="portfolio2">
+      {/* <section class="section section--portfolio" id="portfolio2">
         <div class="section__inner">
           <div class="block">
             <h2>Work</h2>
@@ -217,7 +217,7 @@ function App() {
             </h2>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="section section--contact" id="contact">
         <div class="section__inner">
