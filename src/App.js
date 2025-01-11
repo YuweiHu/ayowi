@@ -42,18 +42,6 @@ function App() {
                 onClick={() => {
                   $("html, body").animate(
                     {
-                      scrollTop: $("#blog").offset().top,
-                    },
-                    1400
-                  );
-                }}
-              >
-                <a href="#blog">Blog</a>
-              </li>
-              <li
-                onClick={() => {
-                  $("html, body").animate(
-                    {
                       scrollTop: $("#portfolio").offset().top,
                     },
                     1600
@@ -86,7 +74,7 @@ function App() {
               <span>#1</span>Intro
             </a>
             <h1>
-              Full-Stack Engineer <span>based in</span> Taiwan
+              Software Engineer <span>based in</span> Taipei, Taiwan
             </h1>
             <p class="lead">
               <span>See my full resume on </span>
@@ -116,7 +104,7 @@ function App() {
             <h2>
               <span> includes </span> React <span> / </span>Redux
               <span> / </span>
-              React Router<span> ...etc </span>
+              NextJS<span> ...etc </span>
             </h2>
             <h2>
               <span>also have experience with... </span> TypeScript{" "}
@@ -129,32 +117,9 @@ function App() {
               Express
             </h2>
             <h2>
-              <span> about database... </span> MongoDB
+              <span> about database... </span> MongoDB <span> / </span> MySQL{" "}
             </h2>
           </div>
-        </div>
-      </section>
-
-      <section class="section section--clients" id="blog">
-        <div class="section__inner">
-          <a class="pre" href="#clients">
-            <span>#3</span>Blog
-          </a>
-          <h2>
-            <span>I wrote my</span> study notes <span>and some</span> technology
-            articles
-            <span> in my blog.</span>
-          </h2>
-          <p class="lead">
-            <a
-              href="https://ayowi-blog.netlify.app/"
-              target="_blank"
-              class="link"
-              rel="noreferrer"
-            >
-              Take a look.
-            </a>
-          </p>
         </div>
       </section>
 
@@ -202,23 +167,6 @@ function App() {
         </div>
       </section>
 
-      {/* <section class="section section--portfolio" id="portfolio2">
-        <div class="section__inner">
-          <div class="block">
-            <h2>Work</h2>
-            <h2>
-              <a
-                href="https://www.decopapa.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Decopapa Offical Website
-              </a>
-            </h2>
-          </div>
-        </div>
-      </section> */}
-
       <section class="section section--contact" id="contact">
         <div class="section__inner">
           <div class="block">
@@ -234,15 +182,6 @@ function App() {
                 rel="noreferrer"
               >
                 Email
-              </a>
-              ,
-              <a
-                href="https://github.com/YuweiHu"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                GitHub
               </a>
               ,
               <a
